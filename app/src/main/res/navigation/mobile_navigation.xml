@@ -9,7 +9,11 @@
         android:id="@+id/nav_practica"
         android:name="com.practica.ui.practica.PracticaFragment"
         android:label="@string/menu_practica"
-        tools:layout="@layout/fragment_practica" />
+        tools:layout="@layout/fragment_practica" >
+        <action
+            android:id="@+id/action_nav_practica_to_addEstadoFragment"
+            app:destination="@id/addEstadoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -22,4 +26,13 @@
         android:name="com.practica.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addEstadoFragment"
+        android:name="com.practica.ui.practica.AddEstadoFragment"
+        android:label="fragment_add_estado"
+        tools:layout="@layout/fragment_add_estado" >
+        <action
+            android:id="@+id/action_addEstadoFragment_to_nav_practica"
+            app:destination="@id/nav_practica" />
+    </fragment>
 </navigation>

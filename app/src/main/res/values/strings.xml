@@ -15,4 +15,17 @@
     <string name="menu_practica">Estados</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="msg_NombreEstado">Nombre del estado</string>
+    <string name="msg_Capital">Nombre de la capital</string>
+    <string name="msg_Poblacion">Numero de poblacion</string>
+    <string name="msg_Costas">Cuantas costas tiene?</string>
+    <string name="bt_addEstado">Agregar Estado</string>
+    <string name="bt_updateEstado">Actualizar Estado</string>
+    <string name="msg_estado_added">Estado agregado</string>
+    <string name="msg_data">Faltan datos</string>
+    <string name="msg_estado_update">Estado actualizado</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

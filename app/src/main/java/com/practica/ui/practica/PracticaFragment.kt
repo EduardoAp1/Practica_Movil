@@ -1,4 +1,4 @@
-package com.practica.ui.home
+package com.practica.ui.practica
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.practica.databinding.FragmentHomeBinding
+import com.practica.databinding.FragmentPracticaBinding
+import com.practica.viewmodel.PracticaViewModel
 
-class HomeFragment : Fragment() {
+class PracticaFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentPracticaBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,9 +24,9 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+            ViewModelProvider(this).get(PracticaViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentPracticaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textHome

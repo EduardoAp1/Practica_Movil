@@ -5,15 +5,15 @@ import com.practica.data.PracticaDao
 import com.practica.model.Estado
 
 class PracticaRepository(private val practicaDao: PracticaDao) {
-    suspend fun addLugar(estado: Estado){
+    suspend fun addEstado(estado: Estado){
         practicaDao.addEstado(estado)
     }
 
-    suspend fun updateLugar(estado: Estado){
+    suspend fun updateEstado(estado: Estado){
         practicaDao.updateEstado(estado)
     }
 
-    suspend fun deleteLugar(estado: Estado){
+    suspend fun deleteEstado(estado: Estado){
         practicaDao.deleteEstado(estado)
     }
 

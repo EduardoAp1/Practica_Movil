@@ -8,7 +8,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.practica.R
+import com.practica.adapter.EstadoAdapter
 import com.practica.databinding.FragmentPracticaBinding
 import com.practica.viewmodel.PracticaViewModel
 
@@ -33,6 +35,15 @@ class PracticaFragment : Fragment() {
         binding.addEstado.setOnClickListener{
             findNavController().navigate(R.id.action_nav_practica_to_addEstadoFragment)
         }
+        //ACTIVAR EL RECICLADOR..
+        val estadoAdapter = EstadoAdapter()
+        val reciclador = binding.reciclador
+        reciclador.adapter =  estadoAdapter
+        reciclador.layoutManager =  LinearLayoutManager(requireContext())
+        practicaViewModel.getAllData.observe(viewLifecycleOwner){
+            estadoAdapter.setData(it)
+        }
+
 
         return binding.root
     }

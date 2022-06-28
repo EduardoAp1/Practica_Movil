@@ -5,6 +5,7 @@ import com.practica.data.PracticaDao
 import com.practica.model.Estado
 
 class PracticaRepository(private val practicaDao: PracticaDao) {
+
     suspend fun addEstado(estado: Estado){
         practicaDao.addEstado(estado)
     }

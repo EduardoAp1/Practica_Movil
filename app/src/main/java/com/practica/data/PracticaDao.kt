@@ -6,6 +6,7 @@ import com.practica.model.Estado
 
 @Dao
 interface PracticaDao {
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addEstado(estado: Estado)
 
@@ -15,6 +16,7 @@ interface PracticaDao {
     @Delete
     suspend fun deleteEstado(estado: Estado)
 
-    @Query("SELECT * FROM ESTADO")
+    @Query("SELECT * FROM estado")
     fun getAllData() : LiveData<List<Estado>>
+
 }

@@ -17,10 +17,9 @@ import com.practica.viewmodel.PracticaViewModel
 class PracticaFragment : Fragment() {
 
     private var _binding: FragmentPracticaBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
+
     private lateinit var practicaViewModel: PracticaViewModel
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,9 +31,11 @@ class PracticaFragment : Fragment() {
 
 
         _binding = FragmentPracticaBinding.inflate(inflater, container, false)
+
         binding.addEstado.setOnClickListener{
             findNavController().navigate(R.id.action_nav_practica_to_addEstadoFragment)
         }
+
         //ACTIVAR EL RECICLADOR..
         val estadoAdapter = EstadoAdapter()
         val reciclador = binding.reciclador

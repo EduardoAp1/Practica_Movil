@@ -7,9 +7,12 @@
         <entry key="..\:/Documentos/practica/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Documentos/practica/app/src/main/res/layout/content_central.xml" value="0.33" />
         <entry key="..\:/Documentos/practica/app/src/main/res/layout/estado_fila.xml" value="0.3484375" />
+        <entry key="..\:/Documentos/practica/app/src/main/res/layout/fragment_add_estado.xml" value="0.3625" />
         <entry key="..\:/Documentos/practica/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Documentos/practica/app/src/main/res/layout/fragment_practica.xml" value="0.1" />
+        <entry key="..\:/Documentos/practica/app/src/main/res/layout/fragment_update_estado.xml" value="0.3625" />
         <entry key="..\:/Documentos/practica/app/src/main/res/menu/central.xml" value="0.36666666666666664" />
+        <entry key="..\:/Documentos/practica/app/src/main/res/menu/delete_menu.xml" value="0.3625" />
         <entry key="..\:/Users/JosuePC/Documents/Practica_Movil/app/src/main/res/layout/activity_central.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/JosuePC/Documents/Practica_Movil/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/JosuePC/Documents/Practica_Movil/app/src/main/res/layout/app_bar_central.xml" value="0.36666666666666664" />

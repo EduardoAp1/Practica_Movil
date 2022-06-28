@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_practica_to_addEstadoFragment"
             app:destination="@id/addEstadoFragment" />
+        <action
+            android:id="@+id/action_nav_practica_to_updateEstadoFragment"
+            app:destination="@id/updateEstadoFragment" />
     </fragment>
 
     <fragment
@@ -34,5 +37,17 @@
         <action
             android:id="@+id/action_addEstadoFragment_to_nav_practica"
             app:destination="@id/nav_practica" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEstadoFragment"
+        android:name="com.practica.ui.practica.UpdateEstadoFragment"
+        android:label="@string/bt_updateEstado"
+        tools:layout="@layout/fragment_update_estado">
+        <action
+            android:id="@+id/action_updateEstadoFragment_to_nav_practica"
+            app:destination="@id/nav_practica" />
+        <argument
+            android:name="estado"
+            app:argType="com.practica.model.Estado" />
     </fragment>
 </navigation>

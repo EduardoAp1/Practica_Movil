@@ -25,6 +25,10 @@
     <string name="msg_estado_added">Estado agregado</string>
     <string name="msg_data">Faltan datos</string>
     <string name="msg_estado_update">Estado actualizado</string>
+    <string name="delete">Eliminar Estado</string>
+    <string name="seguroBorrar">¿Esta seguro de eliminar el estado</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
